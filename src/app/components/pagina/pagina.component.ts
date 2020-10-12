@@ -18,6 +18,9 @@ export class PaginaComponent implements OnInit {
                 this.lastName = params.apellido;
             });
     }
+    redireccion(){
+      this._router.navigate(['/pagina-test', 'Nombre' , 'Apellido'])
+    }
 
     redireccionHome(){
       this._router.navigate(['/home']);
