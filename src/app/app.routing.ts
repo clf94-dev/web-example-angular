@@ -12,7 +12,7 @@ const appRoutes: Routes =[
     {path: 'home', component: HomeComponent},
     {path: 'blog', component: BlogComponent},
     {path: 'form', component: FormComponent},
-    
+    {path: 'pagina-test', component: PaginaComponent},   
     {path: 'pagina-test/:nombre/:apellido', component: PaginaComponent},                
     {path: '**' , component: ErrorComponent}
 ];
