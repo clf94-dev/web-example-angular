@@ -5,13 +5,15 @@ import {HomeComponent} from './components/home/home.component';
 import {BlogComponent} from './components/blog/blog.component';
 import {FormComponent} from './components/form/form.component';
 import {PaginaComponent} from './components/pagina/pagina.component';
+import { ErrorComponent } from './components/error/error.component';
 
 const appRoutes: Routes =[
     {path: '', component: HomeComponent},
     {path: 'home', component: HomeComponent},
     {path: 'blog', component: BlogComponent},
     {path: 'form', component: FormComponent},
-    {path: 'pagina-test', component: PaginaComponent}
+    {path: 'pagina-test', component: PaginaComponent},
+    {path: '**' , component: ErrorComponent}
 ];
 
 export const appRoutingProviders: any[] = [];
