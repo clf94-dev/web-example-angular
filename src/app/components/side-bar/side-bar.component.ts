@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+import * as AOS from 'aos';
+
 @Component({
   selector: 'app-side-bar',
   templateUrl: './side-bar.component.html',
@@ -10,6 +12,7 @@ export class SideBarComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    AOS.init();
   }
 
 }
