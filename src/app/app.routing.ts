@@ -1,10 +1,10 @@
-import {ModuleWithProviders} from '@angular/core'
-import {Routes, RouterModule} from '@angular/router'
+import {ModuleWithProviders} from '@angular/core';
+import {Routes, RouterModule, Route} from '@angular/router';
 
-import {HomeComponent} from './components/home/home.component'
-import {BlogComponent} from './components/blog/blog.component'
-import {FormComponent} from './components/form/form.component'
-import {PaginaComponent} from './components/pagina/pagina.component'
+import {HomeComponent} from './components/home/home.component';
+import {BlogComponent} from './components/blog/blog.component';
+import {FormComponent} from './components/form/form.component';
+import {PaginaComponent} from './components/pagina/pagina.component';
 
 const appRoutes: Routes =[
     {path: '', component: HomeComponent},
@@ -15,4 +15,4 @@ const appRoutes: Routes =[
 ];
 
 export const appRoutingProviders: any[] = [];
-export const routing: ModuleWithProviders =  RouterModule.forRoot(appRoutes);
+export const routing: ModuleWithProviders<Route> =  RouterModule.forRoot(appRoutes);
